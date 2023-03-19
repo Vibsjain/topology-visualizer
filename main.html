@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Topology Visualizer</title>
+</head>
+
+<body>
+    <button class="topology-visualizer-previous-status"><</button>
+    <form class="topology-visualizer-team-form">
+        <label for="tvts">Select Team</label>
+        <select class="topology-visualizer-team-select" id="tvts">
+            <option value="Select Team" selected>Select Team</option>
+        </select>
+        <label for="tvd">Select Date</label>
+        <input 
+            type="date" 
+            class="topology-visualizer-date" 
+            id="tvd"
+        />
+        <input type="submit" value="SUBMIT" />
+    </form>
+    <button class="topology-visualizer-next-status">></button>
+    <div class="topology-visualizer-team-graph"></div>
+    <script type="module" src="./constants.js" defer></script>
+    <script type="module" src="./index.js" defer></script>
+</body>
+
+</html>
