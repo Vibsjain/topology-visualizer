@@ -6,11 +6,12 @@ var selectedTeam
 
 const main = () => {
     fetchTeamList();
-    const form = document.querySelector(".topology-visualizer-team-form");
+    const form = document.querySelector(".topology-visualizer-query-form");
     const previousStateSelector = document.querySelector(".topology-visualizer-previous-status");
     const nextStateSelector = document.querySelector(".topology-visualizer-next-status");
     form.addEventListener('submit', fetchTeamData);
     previousStateSelector.addEventListener('click', decrementInterval);
+    nextStateSelector.addEventListener('click', incrementInterval);
     window.addEventListener("keydown", changeTopology, false);
 }
 

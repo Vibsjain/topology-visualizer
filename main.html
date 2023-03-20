@@ -6,27 +6,28 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Topology Visualizer</title>
+    <link rel="stylesheet" href="main.css">
 </head>
 
 <body>
-    <button class="topology-visualizer-previous-status"><</button>
-    <form class="topology-visualizer-team-form">
-        <label for="tvts">Select Team</label>
-        <select class="topology-visualizer-team-select" id="tvts">
-            <option value="Select Team" selected>Select Team</option>
-        </select>
-        <label for="tvd">Select Date</label>
-        <input 
+    <div class="topology-visualizer-navbar">
+        <button class="topology-visualizer-previous-status"><</button>
+        <form class="topology-visualizer-query-form">
+            <select class="topology-visualizer-team-select" id="tvts">
+                <option value="Select Team" selected>Select Team</option>
+            </select>
+            <input 
             type="date" 
             class="topology-visualizer-date" 
             id="tvd"
-        />
-        <input type="submit" value="SUBMIT" />
-    </form>
-    <button class="topology-visualizer-next-status">></button>
-    <div class="topology-visualizer-team-graph"></div>
-    <script type="module" src="./constants.js" defer></script>
-    <script type="module" src="./index.js" defer></script>
+            />
+            <input type="submit" class="topology-visualizer-submit" value="Fetch Topology" />
+        </form>
+        <button class="topology-visualizer-next-status">></button>
+    </div>
+        <div class="topology-visualizer-team-graph"></div>
+        <script type="module" src="./constants.js" defer></script>
+        <script type="module" src="./index.js" defer></script>
 </body>
 
 </html>

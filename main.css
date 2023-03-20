@@ -1,0 +1,31 @@
+.topology-visualizer-navbar {
+    display: flex;
+    justify-content: space-between;
+} 
+
+.topology-visualizer-team-select, .topology-visualizer-date {
+    height: 25px;
+    width: 150px;
+    border-radius: 5px;
+    border: 2px solid black;
+}
+
+.topology-visualizer-submit {
+    height: 25px;
+    width: 150px;
+    border-radius: 5px;
+    background-color: orange;
+    cursor: pointer;
+}
+
+.topology-visualizer-submit:hover{
+    background-color: rgb(246, 184, 71);
+}
+
+.topology-visualizer-previous-status, .topology-visualizer-next-status {
+    background-color: black;
+    color: white;
+    font-size: 20px;
+    font-weight: bold;
+    cursor: pointer;
+}
